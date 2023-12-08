@@ -24,36 +24,39 @@ function scrollFunction() {
   }
 }
 
-//================== Owl Carousel for About bottom Js=================
-$(".owl-carousel").owlCarousel({
-  loop: true,
-  margin: 20,
-  nav: false,
-  dots: true,
-  autoplay: true,
-  autoplayTimeout: 5000,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 1,
-    },
-    1000: {
-      items: 2,
-    },
-  },
-});
-
-//================== Slick Slider Js=================
-
+//Documen ready
 $(document).ready(function () {
+  //================== Owl Carousel for About bottom Js=================
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 2,
+      },
+    },
+  });
+
+  //================== Slick Slider Js=================
+
   $(".single-item").slick({
     autoplay: true,
     autoplayTimeout: 2000,
     dots: true,
     infinite: true,
   });
+
+  
 });
 
 //============= Inner Video===============
@@ -83,5 +86,10 @@ video_modal.addEventListener("shown.bs.modal", function (event) {
 video_modal.addEventListener("hide.bs.modal", function (event) {
   iframeID.setAttribute("src", $videoSrc);
 });
+
+
+
+
+
 
 
