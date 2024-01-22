@@ -4246,6 +4246,7 @@ body{
 .std_review_btns .stdrdb{
     margin-top: 0;
     padding: .2rem 1rem;
+    border: 1px solid #ffffff;
 }
 .std_review_btns .std_more{
     color: #ffffff;
