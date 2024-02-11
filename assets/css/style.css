@@ -4289,6 +4289,40 @@ body{
     line-height: 150%;
     margin-bottom: 0;
 }
+.stdr_video_popup{
+    background: blueviolet;
+    height: 410px;
+    width: 95vw;
+    max-width: 667px;
+}
+.stdr_video_modal{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+.stdr_photo_prev{
+    background: #fe4a55;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border-radius: 50%;
+    padding-right: 5px;
+}
+.stdr_photo_next{
+    background: #fe4a55;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border-radius: 50%;
+}
+.stdr_imgs .carousel-item{
+    height: 315px;
+}
+.stdr_imgs .carousel-item img{
+    height: 100%;
+}
 /*==================== Responsive Start ==========================*/
 .modile_menu_section{
     display: none;

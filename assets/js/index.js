@@ -46,6 +46,7 @@ $(document).ready(function () {
       },
     },
   });
+  
 
   //================== Slick Slider Js=================
 
@@ -56,7 +57,14 @@ $(document).ready(function () {
     infinite: true,
   });
 
-  
+
+  $(".stdr_modal_imgs").slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+  });
 });
 
 //============= Inner Video===============
