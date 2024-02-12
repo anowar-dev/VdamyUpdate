@@ -4341,6 +4341,58 @@ body{
     color: #fe4a55;
     margin-bottom: 0;
 }
+
+/*--------------- Payment Policy ----------*/
+.payment_policy_main{
+    width: 100%;
+    max-width: 992px;
+    margin: 2.5rem auto;
+}
+.policy_heading{
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    width: fit-content;
+    border-bottom: 1px solid #221638;
+    margin-right: auto;
+}
+.policy_heading span{
+    font-weight: 700;
+}
+.payment_policy_data{
+    margin-top: 2rem;
+}
+.payment_sub_title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    color: #221638;
+}
+.pp_inner_div{
+    padding: 1rem;
+}
+.pp_list{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #221638;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+    list-style: disc;
+}
+.payment_summery .p_summery_inner{
+    padding: 1.5rem;
+    font-size: .9rem;
+    font-weight: 500;
+    color: #221638;
+    background: #EEE8E2;
+    border-radius: .5rem;
+}
+.pFinal_massage{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 /*==================== Responsive Start ==========================*/
 .modile_menu_section{
     display: none;
