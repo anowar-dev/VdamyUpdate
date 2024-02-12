@@ -4202,126 +4202,144 @@ body{
 }
 
 /* Student review */
-.student_review_main .student_review_inner{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    column-gap: 1rem;
-    row-gap: 1.5rem;
+.student_review_section .container .student_review_main{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
 }
-.student_review_inner .student_review_single{
-    width: 95%;
-    max-width: 575px;
+
+
+/* Web review */
+ .web_review .webReview_inner{
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, .3);
+    margin: 2rem 0;
+    width: 100%;
     border-radius: .5rem;
-    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, .5);
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
+ }
+ .reviewer_info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 1.5rem;
+    padding: 1.5rem 2rem;
+ }
+ .reviewer_info .reviewer_img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 1px solid #221638;
+    padding: .3rem;
+    background: #fe4a55;
+ }
+ .Sreviewtitle{
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #fe4a55;
+    text-align: center;
+    margin: 1.5rem auto;
+ }
+ .reviewer_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+ }
+.R_course_name{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #221638;
 }
-.std_review_content .std_review_profile{
+.R_course_name span{
+    font-weight: 700;
+}
+.webReview_content{
+    background: #FEF8EF;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid rgba(	34, 22, 56, .3);
+    border-radius: .5rem .5rem 0 0;
+}
+.load_more_btn{
+    border: none;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* Social Review */
+.socialReview_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, .5);
+    border-radius: .5rem;
+    margin: 2rem 0;
+}
+.socialReview_inner .sReviewer_info{
+    width: 40%;
+    border-right: 1px solid rgba(	34, 22, 56, .3);
+    height: 100%;
+    background: #FEF8EF;
+    text-align: center;
+    padding: 1rem;
+    border-radius: .5rem 0 0 .5rem;
+}
+.socialReview_inner .sReview_content{
+    width: 60%;
+    padding: 1rem;
+}
+.sReviewer_info .sReviewer_img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: .3rem solid #fe4a55;
+    margin: auto;
+}
+.sReviewer_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Video review  */
+.videoReview_inner{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1.2rem;
+    width: 100%;
+    margin: 2rem 0;
+}
+.rVideo_div iframe{
+    border-radius: .5rem .5rem 0 0;
+}
+.videoReview_inner .rVideo_single{
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+}
+.rVideo_single .rVideo_info{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     column-gap: .5rem;
-    background: rgba(0, 0, 0, .01);
-    padding: 1rem;
 }
-.std_review_content .std_review_para{
-    background: #FEF8EF;
-    font-size: .9rem;
-    font-weight: 500;
-    color: #221638;
-    line-height: 150%;
-    padding: 1rem;
-    text-align: justify;
-    margin-bottom: 0;
-}
-.std_review_content .std_review_btns{
-    background: #221638;
-    padding: .5rem 1rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    column-gap: 1rem;
-}
-.std_review_btns .stdrdb{
-    margin-top: 0;
-    padding: .2rem 1rem;
-    border: 1px solid #ffffff;
-}
-.std_review_btns .std_more{
-    color: #ffffff;
-    margin-bottom: 0;
-    font-size: 1rem;
-    font-weight: 500;
-}
-.std_review_btns .std_more i{
-    margin-top: 0;
-}
-.std_review_profile .std_review_psoto{
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    border: .2rem solid #fe4a55;
-}
-.std_review_psoto img{
-    width: 100%;
+.rVideo_logo img{
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
 }
-.std_review_info .std_review_name{
-    font-size: 1rem;
-    font-weight: 800;
-    color: #221638;
-    line-height: 150%;
-    margin-bottom: 0;
-    text-transform: uppercase;
-}
-.std_review_info .std_batch_name{
-    font-size: .9rem;
-    font-weight: 500;
-    color: #221638;
-    line-height: 150%;
-    margin-bottom: 0;
-}
-.std_review_info .std_course_name{
-    font-size: .9rem;
-    font-weight: 500;
-    color: #221638;
-    line-height: 150%;
-    margin-bottom: 0;
-}
-.stdr_video_popup{
-    background: blueviolet;
-    height: 410px;
-    width: 95vw;
-    max-width: 667px;
-}
-.stdr_video_modal{
-    position: absolute;
-    top: 10%;
-    left: 25%;
-}
-.stdr_photo_prev{
-    background: #fe4a55;
-    color: #ffffff;
+.rVideoCourseTitle{
+    font-size: 1.1rem;
     font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    border-radius: 50%;
-    padding-right: 5px;
+    line-height: 1.5rem;
+    color: #221638;
 }
-.stdr_photo_next{
-    background: #fe4a55;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    border-radius: 50%;
+.rVideo_single .rVideo_info{
+    padding: .5rem 1.5rem;
 }
-.stdr_imgs .carousel-item{
-    height: 315px;
-}
-.stdr_imgs .carousel-item img{
-    height: 100%;
+.rVideo_name{
+    font-size: .9rem;
+    font-weight: 500;
+    color: #fe4a55;
+    margin-bottom: 0;
 }
 /*==================== Responsive Start ==========================*/
 .modile_menu_section{
