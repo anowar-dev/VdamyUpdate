@@ -4201,7 +4201,7 @@ body{
     width: 100%;
 }
 
-/* Student review */
+/*====================== Student review page ================*/
 .student_review_section .container .student_review_main{
     width: 100%;
     max-width: 1024px;
@@ -4209,7 +4209,7 @@ body{
 }
 
 
-/* Web review */
+/*------------ Web review -------------*/
  .web_review .webReview_inner{
     box-shadow: 0 1px 5px 1px rgba(0, 0, 0, .3);
     margin: 2rem 0;
@@ -4263,7 +4263,7 @@ body{
     margin: 0 auto;
 }
 
-/* Social Review */
+/*------------------ Social Review -----------------*/
 .socialReview_inner{
     display: flex;
     justify-content: space-between;
@@ -4300,7 +4300,7 @@ body{
     border-radius: 50%;
 }
 
-/* Video review  */
+/*------------------ Video review  ------------------*/
 .videoReview_inner{
     display: grid;
     grid-template-columns: auto auto;
@@ -4380,18 +4380,98 @@ body{
     list-style: disc;
 }
 .payment_summery .p_summery_inner{
-    padding: 1.5rem;
-    font-size: .9rem;
+    padding: 20px;
+    background: #e6f2f5;
+    margin-bottom: 15px;
+    border-radius: .5rem;
+    font-size: 1rem;
     font-weight: 500;
     color: #221638;
-    background: #EEE8E2;
-    border-radius: .5rem;
 }
 .pFinal_massage{
     font-size: 1rem;
     font-weight: 600;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+/* Privacy policy */
+.privacyBodyMain {
+    width: 100%;
+    max-width: 992px;
+    margin: 50px auto;
+}
+.privacyContent .privacyImg img {
+    margin-bottom: 15px;
+}
+.privacyInnerContent .webDetails {
+    padding: 20px;
+    background: #e6f2f5;
+    margin-bottom: 15px;
+}
+
+.privacyInnerContent .title_h3{
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+.privacy_li{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #221638;
+    line-height: 1.3rem;
+    margin-bottom: 0.5rem;
+    list-style: disc;
+}
+
+/*============== Service Page Desing ================*/
+.service_section{
+    padding: 3rem 0;
+}
+.service_title_div{
+    width: 100%;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.service_body_div{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1.8rem;
+}
+.service_icon i{
+    font-size: 1.5rem;
+    color: #fe4a55;
+}
+.service_title2{
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #221638;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.service_btn{
+    text-decoration: none;
+    color: #fe4a55;
+    font-size: 1rem;
+    transition: .4s;
+}
+.service_btn:hover{
+    font-size: 1.05rem;
+    color: #221638;
+}
+.service_single{
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, .03);
+    border-radius: .5rem;
+    transition: .4s;
+}
+.service_single:hover{
+    margin-top: -1rem;
+}
+.service_single i{
+    margin-top: 0;
 }
 /*==================== Responsive Start ==========================*/
 .modile_menu_section{
