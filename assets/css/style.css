@@ -83,6 +83,84 @@ body{
 }
 
 /*================= Globel css ===================*/
+/* pre loder start*/
+.preloder{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    z-index: 99999999999999999;
+    transition: 1s;
+}
+.preloder .preloder_content{
+    width: 95vw;
+    max-width: 700px;
+    height: 90vh;
+    max-height: 480px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+.preloder_content .pre_img_div{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    position: relative;
+    transform: scale(0);
+    transition: .8s;
+}
+.pre_img_div .preloder_img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+}
+.preloder_header{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: fit-content;
+}
+.preloder_header i{
+    color: #ffffff;
+    background: #fe4a55;
+    padding: 0.2rem .3rem;
+    font-size: 1rem;
+    border-radius: .2rem;
+    cursor: pointer;
+    transition: .4s;
+    margin-top: 0;
+}
+.preloder_btn{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+}
+.preloder_btn .btn_red{
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 5px 0 rgba(255, 255, 255, .5);
+    animation: pre_popup 1.5s infinite ease;
+    transition: .4s;
+}
+.preloder_btn .btn_red:hover{
+    animation: unset;
+}
+.preloder_header i:hover{
+    background: #221638;
+    box-shadow: 0 0 2px 0 rgba(255, 255, 255, .5);
+}
+@keyframes pre_popup {
+    0%{transform: scale(.85);}
+    50%{transform: scale(1);}
+    100%{transform: scale(.85);}
+}
+/* Pre loder end */
+
 /* Btn Red */
 .btn_red{
     width: fit-content;
@@ -4426,6 +4504,7 @@ body{
 /*============== Service Page Desing ================*/
 .service_section{
     padding: 3rem 0;
+    background: #ffffff;
 }
 .service_title_div{
     width: 100%;
@@ -4469,6 +4548,7 @@ body{
 }
 .service_single:hover{
     margin-top: -1rem;
+    margin-bottom: 1rem;
 }
 .service_single i{
     margin-top: 0;

@@ -65,6 +65,29 @@ $(document).ready(function () {
     slidesToShow: 1,
     adaptiveHeight: true,
   });
+
+  //Discount preloder
+  setTimeout(function(){
+    $(".preloder").show();
+    setTimeout(function(){
+      $(".pre_img_div").css({ Transform: "scale(1)" });
+    }, 50);
+  },1500);
+
+  // preloder close bnt click
+  $(".preloder_header").click(function () {
+    $(".pre_img_div").css({ Transform: "scale(0)" });
+    setTimeout(function(){
+      $(".preloder").css({ display: "none" });
+    }, 500);
+  });
+
+  // preloder details bnt click
+  $(".preloder_btn").click(function(){
+    $(".pre_img_div").css({ Transform: "scale(0)" });
+    $(".preloder").css({ Transform: "scale(0)" });
+  });
+  
 });
 
 //============= Inner Video===============
