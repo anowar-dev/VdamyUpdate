@@ -91,7 +91,7 @@ body{
     height: 100vh;
     background: rgba(0, 0, 0, .5);
     z-index: 99999999999999999;
-    transition: 1s;
+    transition: .4s;
 }
 .preloder .preloder_content{
     width: 95vw;
@@ -110,7 +110,7 @@ body{
     height: 100%;
     position: relative;
     transform: scale(0);
-    transition: .8s;
+    transition: .4s;
 }
 .pre_img_div .preloder_img{
     height: 100%;
@@ -808,8 +808,12 @@ body{
     margin: 50px auto;
 }
 .popular_inner_content{
-    width: 95%;
+    width: 100%;
 }
+
+/* .Webiner_video_single{
+    width: 100%;
+} */
 
 .popular_crs_ends{
     margin: auto;
@@ -2675,8 +2679,8 @@ body{
 }
 .course_body_main .course_body_inner{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 25px;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1.5rem;
 }
 .course_body_main .course_sub_title{
     display: flex;
